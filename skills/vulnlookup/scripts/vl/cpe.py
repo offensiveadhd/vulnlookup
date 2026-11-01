@@ -1,6 +1,6 @@
 """CPE 2.3 strings, version ordering and configuration matching.
 
-A port of the engine that SCAN 0.0 (offensiveadhd-scan0) proved in the browser, kept
+A port of the engine that SCAN 0.0 (https://scan0.offensiveadhd.com) proved in the browser, kept
 deterministic and dependency-free:
 
 * formatted-string binding (NISTIR 7695 6.2): ``\\``-escaping, ``*`` = ANY, ``-`` = NA,

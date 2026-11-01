@@ -25,7 +25,7 @@ guessed.
 
 One skill folder, installable into **Claude Code**, **Hermes Agent**, **OpenAI Codex** and
 any agent that can run a shell command. The successor to
-[SCAN 0.0](https://github.com/TikoTikTok/offensiveadhd-scan0), the browser version, with the
+[SCAN 0.0](https://scan0.offensiveadhd.com), the browser version, with the
 same engine ported to Python and the same rule: every false positive anyone finds becomes a
 test.
 
@@ -152,21 +152,28 @@ reaches the cache, the output or the logs. Threat model in [SECURITY.md](SECURIT
 
 ## Architecture
 
+```mermaid
+flowchart TD
+    you["you: free text"] --> agent["agent<br/>classifies the request (SKILL.md §1) into one command"]
+    agent --> cli["vulnlookup.py<br/>cve · cpe · product · resolve · bulk · kev · epss · key · cache"]
+    cli --> resolve["vl/resolve.py<br/>aliases.json → NVD CPE dictionary → one CPE"]
+    resolve -. "exit 3: ambiguous, ranked candidates; the agent picks from your wording or asks you" .-> agent
+    resolve --> sources
+    cli --> sources["vl/sources.py"]
+    sources --> nvdcve["NVD CVE API<br/>virtualMatchString, paged"]
+    sources --> nvdcpe["NVD CPE API<br/>cpeMatchString, paged"]
+    sources --> epss["FIRST EPSS<br/>batched"]
+    sources --> kev["CISA KEV<br/>daily feed"]
+    http["vl/http.py<br/>pacing 5 or 50 per 30 s, shared on disk · backoff · https only"] --- sources
+    keystore["vl/keystore.py<br/>NVD_API_KEY → OS credential store → 0600 file"] -. "apiKey header, NVD only" .-> http
+    nvdcve & nvdcpe & epss & kev --> cache["vl/cache.py<br/>cve 6 h · cpe 7 d · epss 24 h · kev 24 h"]
+    cache --> cpe["vl/cpe.py<br/>parse · compare versions · walk configurations · verdict + bounds"]
+    cpe --> enrich["vl/enrich.py<br/>CVSS, EPSS, KEV, CWE, refs · exploit evidence · remediation"]
+    enrich --> render["vl/render.py<br/>table / json / md / csv / brief × terse / analyst / executive"]
+    render --> agent
 ```
-  you ──► agent (classifies the request: SKILL.md §1, one command) ──► vulnlookup.py
-                                                                          │
-            ┌─────────────────────────────────────────────────────────────┤
-            │  vl/resolve.py   aliases.json ──► NVD CPE dictionary ──► one CPE, or exit 3
-            │  vl/sources.py   NVD CVE API (virtualMatchString, paged)     ─┐
-            │                  FIRST EPSS (batched)   CISA KEV (daily)      ├─► vl/cache.py
-            │  vl/cpe.py       parse · compare versions · walk configurations · verdict + bounds
-            │  vl/enrich.py    row = CVSS, EPSS, KEV, CWE, refs · exploit evidence · remediation
-            │  vl/render.py    table | json | md | csv | brief  ×  terse | analyst | executive
-            │  vl/http.py      pacing (5/50 per 30 s, shared on disk) · backoff · https only
-            │  vl/keystore.py  NVD_API_KEY → OS credential store → 0600 file
-            └─────────────────────────────────────────────────────────────┘
-                     only CVE ids, CPE strings and product keywords ever leave the machine
-```
+
+Only CVE ids, CPE strings and product keywords ever leave the machine.
 
 The repository layout follows the Agent Skills format:
 

@@ -1,5 +1,5 @@
 {
- "_comment": "Product aliases: what people type -> the part:vendor:product pairs the NVD files it under. Several pairs when the NVD renamed a product (nginx was filed under three vendors). Qualifier ranks order version words (negative = pre-release). Derived from SCAN 0.0's catalog (offensiveadhd-scan0); every pair was checked against the NVD CPE dictionary there.",
+ "_comment": "Product aliases: what people type -> the part:vendor:product pairs the NVD files it under. Several pairs when the NVD renamed a product (nginx was filed under three vendors). Qualifier ranks order version words (negative = pre-release). Derived from SCAN 0.0's catalog (https://scan0.offensiveadhd.com); every pair was checked against the NVD CPE dictionary there.",
  "qualifiers": {
   "dev": -60,
   "nightly": -55,
