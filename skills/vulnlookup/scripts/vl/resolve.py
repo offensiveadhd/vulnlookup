@@ -148,9 +148,12 @@ class Resolution:
 
     def targets(self) -> list[C.Cpe]:
         out = []
-        for pair in self.pairs + self.family:
+        for pair in self.pairs:
             part, vendor, product = pair.split(":", 2)
             out.append(C.make_cpe(part, vendor, product, self.query.version, self.query.update))
+        for pair in self.family:  # windows_10_1809 carries its own build numbers: every version of it
+            part, vendor, product = pair.split(":", 2)
+            out.append(C.make_cpe(part, vendor, product))
         return out
 
 
@@ -301,8 +304,17 @@ def snap_version(pair: str, q: Query, sources: Any, entries: list[dict[str, Any]
     if e.get("deprecated") and e.get("deprecatedBy"):
         name = sorted(e["deprecatedBy"])[0]
         p2 = C.parse_cpe(name)
-        if p2 and p2.vendor == vendor and p2.product == product:
+        same_shape = (
+            p2
+            and p2.vendor == vendor
+            and p2.product == product
+            and all(p2.get(a) == C.ANY for a in ("edition", "language", "sw_edition", "target_sw", "target_hw", "other"))
+        )
+        if same_shape:
             p = p2
             note = f"deprecated entry; replaced by {name}"
+        else:  # the replacements are platform-specific (an arm64 edition): keep the typed version
+            name = e["cpeName"]
+            note = "deprecated entry; its replacements add a platform, so the version is kept as typed"
     update = C.ANY if p.update == C.NA else p.update  # the dictionary's "no update" is a plain version
     return Snap(True, p.version, update, name, note)

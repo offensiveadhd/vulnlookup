@@ -165,8 +165,9 @@ def tagged(refs: list[dict[str, Any]], *want: str, without: tuple[str, ...] = ()
 
 def fixed_versions_by_product(cve: dict[str, Any], limit: int = 3) -> list[tuple[str, list[str]]]:
     """For a CVE looked up without a target: the ``versionEndExcluding`` bounds per vendor:product
-    over every vulnerable criteria, for the products with the most criteria (the subject of the
-    record, not the long tail of platforms that embed it)."""
+    over every vulnerable criteria, for the products the description names (the subject of the
+    record, not the long tail of platforms that embed it), then the ones with the most criteria."""
+    desc = description(cve).lower()
     per: dict[str, set[str]] = {}
     count: dict[str, int] = {}
     for cfg in cve.get("configurations") or []:
@@ -183,7 +184,12 @@ def fixed_versions_by_product(cve: dict[str, Any], limit: int = 3) -> list[tuple
                 count[key] = count.get(key, 0) + 1
                 if cm.get("versionEndExcluding"):
                     per.setdefault(key, set()).add(cm["versionEndExcluding"])
-    top = sorted(per, key=lambda k: (-count[k], k))[:limit]
+
+    def named(key: str) -> int:  # how many of the vendor / product words the description mentions
+        words = {w for w in re.split(r"[_\-:]+", key) if len(w) >= 3}
+        return sum(1 for w in words if w in desc)
+
+    top = sorted(per, key=lambda k: (-named(k), -count[k], k))[:limit]
     return [(k, sorted(per[k], key=lambda v: [(t.num, int(t.v) if t.num else t.v) for t in C.vtokens(v)])) for k in top]
 
 

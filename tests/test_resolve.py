@@ -47,6 +47,10 @@ def test_alias_family_windows_10():
     assert res is not None
     assert res.pairs == ["o:microsoft:windows_10"]
     assert res.family == ["o:microsoft:windows_10_1809"]
+    assert [str(t) for t in res.targets()] == [
+        "cpe:2.3:o:microsoft:windows_10:1809:*:*:*:*:*:*:*",
+        "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:*:*",  # the family product carries its own build numbers
+    ]
 
 
 def test_alias_miss_is_none():
@@ -144,3 +148,18 @@ def test_aliases_file_is_well_formed():
             seen[nf] = str(a["cpe"])
     assert data["qualifiers"]["alpha"] < data["qualifiers"]["rc"] < data["qualifiers"]["release"] == 0 < data["qualifiers"]["sp"]
     assert C.QUALIFIERS["alpha"] == -40
+
+
+def test_snap_does_not_follow_a_platform_specific_replacement():
+    """windows_10:1809:* is deprecated by an arm64 edition; adopting it would restrict the query."""
+    entries = [
+        {
+            "cpeName": "cpe:2.3:o:microsoft:windows_10:1809:*:*:*:*:*:*:*",
+            "deprecated": True,
+            "deprecatedBy": ["cpe:2.3:o:microsoft:windows_10:1809:*:*:*:*:*:arm64:*"],
+            "title": "Windows 10 1809",
+        },
+    ]
+    s = R.snap_version("o:microsoft:windows_10", R.parse_product("windows 10 1809"), None, entries)
+    assert s.in_dictionary and s.version == "1809" and s.update == "*"
+    assert s.cpe_name == "cpe:2.3:o:microsoft:windows_10:1809:*:*:*:*:*:*:*" and "platform" in s.note

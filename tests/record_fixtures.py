@@ -186,7 +186,7 @@ def main() -> None:
     kev["count"] = len(trimmed)
     out[sources.KEV] = kev
     trim(out)
-    OUT.write_text(json.dumps(out, indent=0, sort_keys=True), encoding="utf-8")
+    OUT.write_text(json.dumps(out, indent=0, sort_keys=True), encoding="utf-8", newline="\n")
     print(f"wrote {OUT} ({OUT.stat().st_size // 1024} KB, {len(out)} responses)")
 
 

@@ -87,7 +87,7 @@ def main() -> None:
     for i, (cmd, hold, max_lines) in enumerate(SESSION):
         out = run(cmd)
         lines = clip(out, max_lines)
-        (FRAMES / f"{i + 1:02d}.txt").write_text("$ " + cmd + "\n" + "\n".join(lines) + "\n", encoding="utf-8")
+        (FRAMES / f"{i + 1:02d}.txt").write_text("$ " + cmd + "\n" + "\n".join(lines) + "\n", encoding="utf-8", newline="\n")
         frames.append((cmd, lines, hold))
 
     # timeline
@@ -139,7 +139,7 @@ def main() -> None:
             )
         svg.append("</g></g>")
     svg.append("</svg>")
-    OUT_SVG.write_text("\n".join(svg) + "\n", encoding="utf-8")
+    OUT_SVG.write_text("\n".join(svg) + "\n", encoding="utf-8", newline="\n")
 
     # the HTML player: same frames, a tiny script, no dependency
     OUT_HTML.write_text(

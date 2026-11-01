@@ -44,6 +44,8 @@ def test_one_cve_json_fields(fetch):
     assert r["published"] == "2021-12-10"
     assert all("tags" in ref for ref in r["references"])
     assert "verdict" not in r  # a CVE lookup has no target to verify against
+    # the description names Apache Log4j, so log4j leads the fixed-version summary, not the Siemens firmware
+    assert r["fixed_versions_by_product"][0] == {"product": "apache:log4j", "versions": ["2.3.1", "2.12.2", "2.15.0"]}
 
 
 def test_bulk_cves_and_unknown_id(fetch, tmp_path):
