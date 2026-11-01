@@ -1,0 +1,2 @@
+$ vulnlookup cve CVE-2021-44228 --format brief --style terse
+CVE-2021-44228  10.0 CRIT  EPSS 0.999  KEV+ransomware

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "vulnlookup",
+  "description": "Passive vulnerability lookup: CVE, CPE, EPSS and CISA KEV, with local verification of every version range.",
+  "owner": {
+    "name": "TikoTikTok"
+  },
+  "plugins": [
+    {
+      "name": "vulnlookup",
+      "description": "CVE / CPE / EPSS / KEV lookups with zero false positives by construction: one command per question, composable filters, five output formats, three styles, bring-your-own NVD key in the OS credential store.",
+      "source": "./",
+      "category": "security"
+    }
+  ]
+}

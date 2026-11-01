@@ -1,0 +1,12 @@
+$ VULNLOOKUP_NO_ALIAS=1 vulnlookup resolve gitlab
+ambiguous: 'gitlab' matches 8 products in the NVD dictionary. Pick one with --pick part:vendor:product, or ask which was mea
+  1.00  a:gitlab:gitlab                                  GitLab                                   product name is exactly wh
+  1.00  a:jenkins:gitlab                                 Jenkins GitLab                           product name is exactly wh
+  0.69  a:gitlab:gitlab-vscode-extension                 Gitlab Gitlab-vscode-extension           your words are part of a l
+  0.68  a:gitlab:gitlab-shell                            gitlab gitlab-shell                      your words are part of a l
+  0.68  a:gitlab::api::v4_project:gitlab::api::v4        GitLab::API::v4 Project GitLab::API::v4  your words are part of a l
+  0.65  a:gitlab:gitlab_runner                           Gitlab Runner                            your words are part of a l
+  0.64  a:jenkins:gitlab_authentication                  Jenkins Gitlab Authentication            your words are part of a l
+  0.63  a:jenkins:gitlab_oauth                           Jenkins GitLab OAuth for Jenkins         your words are part of a l
+{
+… 76 more line(s)

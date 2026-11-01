@@ -1,0 +1,2 @@
+$ vulnlookup key status
+NVD API key: none; requests are paced at 5 per 30 s. Get one at https://nvd.nist.gov/developers/request-an-api-key

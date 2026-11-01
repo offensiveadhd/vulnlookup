@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 999 674" width="999" height="674" font-family="'IBM Plex Mono','JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="13">
+<style>
+@keyframes cycle { 0% { opacity: 0 } 100% { opacity: 0 } }
+.f { opacity: 0; animation-duration: 55.53s; animation-iteration-count: infinite; animation-timing-function: steps(1, end); }
+@keyframes f0 { 0% { opacity: 0 } 1.080% { opacity: 1 } 10.859% { opacity: 1 } 10.860% { opacity: 0 } 100% { opacity: 0 } }
+.f0 { animation-name: f0; }
+@keyframes o0 { 0% { opacity: 0 } 5.457% { opacity: 1 } 10.859% { opacity: 1 } 10.860% { opacity: 0 } 100% { opacity: 0 } }
+.o0 { animation-name: o0; }
+@keyframes f1 { 0% { opacity: 0 } 11.399% { opacity: 1 } 24.383% { opacity: 1 } 24.384% { opacity: 0 } 100% { opacity: 0 } }
+.f1 { animation-name: f1; }
+@keyframes o1 { 0% { opacity: 0 } 16.279% { opacity: 1 } 24.383% { opacity: 1 } 24.384% { opacity: 0 } 100% { opacity: 0 } }
+.o1 { animation-name: o1; }
+@keyframes f2 { 0% { opacity: 0 } 24.923% { opacity: 1 } 40.528% { opacity: 1 } 40.529% { opacity: 0 } 100% { opacity: 0 } }
+.f2 { animation-name: f2; }
+@keyframes o2 { 0% { opacity: 0 } 30.623% { opacity: 1 } 40.528% { opacity: 1 } 40.529% { opacity: 0 } 100% { opacity: 0 } }
+.o2 { animation-name: o2; }
+@keyframes f3 { 0% { opacity: 0 } 41.068% { opacity: 1 } 49.271% { opacity: 1 } 49.272% { opacity: 0 } 100% { opacity: 0 } }
+.f3 { animation-name: f3; }
+@keyframes o3 { 0% { opacity: 0 } 43.868% { opacity: 1 } 49.271% { opacity: 1 } 49.272% { opacity: 0 } 100% { opacity: 0 } }
+.o3 { animation-name: o3; }
+@keyframes f4 { 0% { opacity: 0 } 49.811% { opacity: 1 } 59.733% { opacity: 1 } 59.734% { opacity: 0 } 100% { opacity: 0 } }
+.f4 { animation-name: f4; }
+@keyframes o4 { 0% { opacity: 0 } 53.431% { opacity: 1 } 59.733% { opacity: 1 } 59.734% { opacity: 0 } 100% { opacity: 0 } }
+.o4 { animation-name: o4; }
+@keyframes f5 { 0% { opacity: 0 } 60.274% { opacity: 1 } 72.961% { opacity: 1 } 72.962% { opacity: 0 } 100% { opacity: 0 } }
+.f5 { animation-name: f5; }
+@keyframes o5 { 0% { opacity: 0 } 63.956% { opacity: 1 } 72.961% { opacity: 1 } 72.962% { opacity: 0 } 100% { opacity: 0 } }
+.o5 { animation-name: o5; }
+@keyframes f6 { 0% { opacity: 0 } 73.501% { opacity: 1 } 92.373% { opacity: 1 } 92.374% { opacity: 0 } 100% { opacity: 0 } }
+.f6 { animation-name: f6; }
+@keyframes o6 { 0% { opacity: 0 } 79.768% { opacity: 1 } 92.373% { opacity: 1 } 92.374% { opacity: 0 } 100% { opacity: 0 } }
+.o6 { animation-name: o6; }
+@keyframes f7 { 0% { opacity: 0 } 92.914% { opacity: 1 } 99.460% { opacity: 1 } 99.461% { opacity: 0 } 100% { opacity: 0 } }
+.f7 { animation-name: f7; }
+@keyframes o7 { 0% { opacity: 0 } 94.958% { opacity: 1 } 99.460% { opacity: 1 } 99.461% { opacity: 0 } 100% { opacity: 0 } }
+.o7 { animation-name: o7; }
+</style>
+<rect width="999" height="674" rx="12" fill="#0B0D10"/>
+<rect x="0" y="0" width="999" height="30" rx="12" fill="#14181D"/>
+<circle cx="18" cy="15" r="5" fill="#E5484D"/><circle cx="36" cy="15" r="5" fill="#FF6B1A"/><circle cx="54" cy="15" r="5" fill="#B8FF3C"/>
+<text x="500" y="20" text-anchor="middle" fill="#8A94A2" font-size="12">vulnlookup — passive CVE / CPE / EPSS / KEV lookup</text>
+<g class="f f0">
+<text x="16" y="60" fill="#B8FF3C">$ <tspan fill="#D8DEE6">vulnlookup cve CVE-2021-44228 --format brief --style terse</tspan></text>
+<g class="f o0">
+<text x="16" y="78" fill="#FF8A4A" xml:space="preserve">CVE-2021-44228  10.0 CRIT  EPSS 0.999  KEV+ransomware</text>
+</g></g>
+<g class="f f1">
+<text x="16" y="60" fill="#B8FF3C">$ <tspan fill="#D8DEE6">vulnlookup product &quot;apache httpd 2.4.49&quot; --kev --poc --style terse</tspan></text>
+<g class="f o1">
+<text x="16" y="78" fill="#FF8A4A" xml:space="preserve">CVE             CVSS      EPSS   KEV             Exploit  Match</text>
+<text x="16" y="96" fill="#C8D0DA" xml:space="preserve">--------------  --------  -----  --------------  -------  -----</text>
+<text x="16" y="114" fill="#FF8A4A" xml:space="preserve">CVE-2021-41773  9.8 CRIT  0.999  KEV+ransomware  ITW      EXACT</text>
+<text x="16" y="132" fill="#FF8A4A" xml:space="preserve">CVE-2021-42013  9.8 CRIT  0.999  KEV+ransomware  ITW      EXACT</text>
+<text x="16" y="150" fill="#FF8A4A" xml:space="preserve">CVE-2024-38475  9.1 CRIT  0.999  KEV             ITW      RANGE</text>
+</g></g>
+<g class="f f2">
+<text x="16" y="60" fill="#B8FF3C">$ <tspan fill="#D8DEE6">vulnlookup product &quot;apache httpd 2.4.49&quot; --kev --style executive --format brief</tspan></text>
+<g class="f o2">
+<text x="16" y="78" fill="#C8D0DA" xml:space="preserve">Subject: apache httpd 2.4.49 -&gt; a:apache:http_server (via alias); version in the NVD dictionary</text>
+<text x="16" y="96" fill="#FF8A4A" xml:space="preserve">3 CVE(s) confirmed against the subject: 3 critical, 0 high; 3 in CISA KEV; 3 with EPSS &gt;= 0.1.</text>
+<text x="16" y="114" fill="#C8D0DA" xml:space="preserve">Act first:</text>
+<text x="16" y="132" fill="#FF8A4A" xml:space="preserve">  - CVE-2021-41773 (9.8 CRIT, EPSS 0.999, KEV)</text>
+<text x="16" y="150" fill="#FF8A4A" xml:space="preserve">  - CVE-2021-42013 (9.8 CRIT, EPSS 0.999, KEV)</text>
+<text x="16" y="168" fill="#FF8A4A" xml:space="preserve">  - CVE-2024-38475 (9.1 CRIT, EPSS 0.999, KEV): upgrade to 2.4.60</text>
+<text x="16" y="186" fill="#C8D0DA" xml:space="preserve"></text>
+<text x="16" y="204" fill="#8A94A2" xml:space="preserve">Not counted (shown with --include-unverified): COND 3</text>
+</g></g>
+<g class="f f3">
+<text x="16" y="60" fill="#B8FF3C">$ <tspan fill="#D8DEE6">vulnlookup resolve &quot;log4j 2.14.1&quot;</tspan></text>
+<g class="f o3">
+<text x="16" y="78" fill="#C8D0DA" xml:space="preserve">cpe:2.3:a:apache:log4j:2.14.1:*:*:*:*:*:*:*</text>
+<text x="16" y="96" fill="#B8FF3C" xml:space="preserve">  exact dictionary entry (cpe:2.3:a:apache:log4j:2.14.1:-:*:*:*:*:*:*)</text>
+</g></g>
+<g class="f f4">
+<text x="16" y="60" fill="#B8FF3C">$ <tspan fill="#D8DEE6">vulnlookup product &quot;log4j 2.99&quot; --format brief</tspan></text>
+<g class="f o4">
+<text x="16" y="78" fill="#C8D0DA" xml:space="preserve">log4j 2.99 -&gt; a:apache:log4j (via alias); version NOT in the NVD dictionary (typed as given; only range criteria can match i</text>
+<text x="16" y="96" fill="#8A94A2" xml:space="preserve">[exit 4]</text>
+</g></g>
+<g class="f f5">
+<text x="16" y="60" fill="#B8FF3C">$ <tspan fill="#D8DEE6">VULNLOOKUP_NO_ALIAS=1 vulnlookup resolve gitlab</tspan></text>
+<g class="f o5">
+<text x="16" y="78" fill="#FF8A4A" xml:space="preserve">ambiguous: &#x27;gitlab&#x27; matches 8 products in the NVD dictionary. Pick one with --pick part:vendor:product, or ask which was mea</text>
+<text x="16" y="96" fill="#C8D0DA" xml:space="preserve">  1.00  a:gitlab:gitlab                                  GitLab                                   product name is exactly wh</text>
+<text x="16" y="114" fill="#C8D0DA" xml:space="preserve">  1.00  a:jenkins:gitlab                                 Jenkins GitLab                           product name is exactly wh</text>
+<text x="16" y="132" fill="#C8D0DA" xml:space="preserve">  0.69  a:gitlab:gitlab-vscode-extension                 Gitlab Gitlab-vscode-extension           your words are part of a l</text>
+<text x="16" y="150" fill="#C8D0DA" xml:space="preserve">  0.68  a:gitlab:gitlab-shell                            gitlab gitlab-shell                      your words are part of a l</text>
+<text x="16" y="168" fill="#C8D0DA" xml:space="preserve">  0.68  a:gitlab::api::v4_project:gitlab::api::v4        GitLab::API::v4 Project GitLab::API::v4  your words are part of a l</text>
+<text x="16" y="186" fill="#C8D0DA" xml:space="preserve">  0.65  a:gitlab:gitlab_runner                           Gitlab Runner                            your words are part of a l</text>
+<text x="16" y="204" fill="#C8D0DA" xml:space="preserve">  0.64  a:jenkins:gitlab_authentication                  Jenkins Gitlab Authentication            your words are part of a l</text>
+<text x="16" y="222" fill="#C8D0DA" xml:space="preserve">  0.63  a:jenkins:gitlab_oauth                           Jenkins GitLab OAuth for Jenkins         your words are part of a l</text>
+<text x="16" y="240" fill="#C8D0DA" xml:space="preserve">{</text>
+<text x="16" y="258" fill="#C8D0DA" xml:space="preserve">… 76 more line(s)</text>
+</g></g>
+<g class="f f6">
+<text x="16" y="60" fill="#B8FF3C">$ <tspan fill="#D8DEE6">vulnlookup product &quot;openssl 1.1.1&quot; --severity CRITICAL --recommend --format md --limit 2</tspan></text>
+<g class="f o6">
+<text x="16" y="78" fill="#C8D0DA" xml:space="preserve">## openssl 1.1.1 -&gt; a:openssl:openssl (via alias); version in the NVD dictionary</text>
+<text x="16" y="96" fill="#C8D0DA" xml:space="preserve"></text>
+<text x="16" y="114" fill="#FF8A4A" xml:space="preserve">| CVE | CVSS | EPSS | KEV | Exploit | Published | CWE | Match | Matched criteria |</text>
+<text x="16" y="132" fill="#C8D0DA" xml:space="preserve">|---|---|---|---|---|---|---|---|---|</text>
+<text x="16" y="150" fill="#FF8A4A" xml:space="preserve">| CVE-2021-3711 | 9.8 CRIT | 0.878 | - | none | 2021-08-24 | CWE-120 | RANGE | cpe:2.3:a:openssl:openssl:*:*:*:*:*:*:*:* [&gt;=</text>
+<text x="16" y="168" fill="#C8D0DA" xml:space="preserve"></text>
+<text x="16" y="186" fill="#C8D0DA" xml:space="preserve">### CVE-2021-3711</text>
+<text x="16" y="204" fill="#C8D0DA" xml:space="preserve"></text>
+<text x="16" y="222" fill="#FF8A4A" xml:space="preserve">- CVSS 3.1 9.8 CRITICAL  CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</text>
+<text x="16" y="240" fill="#C8D0DA" xml:space="preserve">- EPSS 0.878 (percentile 0.997, 2026-11-01)</text>
+<text x="16" y="258" fill="#C8D0DA" xml:space="preserve">- CWE CWE-120</text>
+<text x="16" y="276" fill="#C8D0DA" xml:space="preserve">- matched cpe:2.3:a:openssl:openssl:*:*:*:*:*:*:*:*  [&gt;= 1.1.1 &lt; 1.1.1l]</text>
+<text x="16" y="294" fill="#C8D0DA" xml:space="preserve">- fixed in 1.1.1l</text>
+<text x="16" y="312" fill="#C8D0DA" xml:space="preserve">- exploit evidence: no-public-evidence</text>
+<text x="16" y="330" fill="#C8D0DA" xml:space="preserve">- remediation:</text>
+<text x="16" y="348" fill="#C8D0DA" xml:space="preserve">  - Upgrade openssl openssl to 1.1.1l or later (the first version the NVD&#x27;s vulnerable ranges exclude).</text>
+<text x="16" y="366" fill="#C8D0DA" xml:space="preserve">  - Apply the patch: https://www.oracle.com/security-alerts/cpuapr2022.html</text>
+<text x="16" y="384" fill="#C8D0DA" xml:space="preserve">  - Apply the patch: https://www.oracle.com/security-alerts/cpujan2022.html</text>
+<text x="16" y="402" fill="#C8D0DA" xml:space="preserve">  - Apply the patch: https://www.oracle.com/security-alerts/cpuoct2021.html</text>
+<text x="16" y="420" fill="#C8D0DA" xml:space="preserve">  - Follow the vendor advisory: https://www.openssl.org/news/secadv/20210824.txt</text>
+<text x="16" y="438" fill="#C8D0DA" xml:space="preserve">- In order to decrypt SM2 encrypted data an application is expected to call the API function EVP_PKEY_decrypt(). Typically a</text>
+<text x="16" y="456" fill="#C8D0DA" xml:space="preserve"></text>
+<text x="16" y="474" fill="#8A94A2" xml:space="preserve">Not counted (shown with --include-unverified): PLATFORM 1</text>
+</g></g>
+<g class="f f7">
+<text x="16" y="60" fill="#B8FF3C">$ <tspan fill="#D8DEE6">vulnlookup key status</tspan></text>
+<g class="f o7">
+<text x="16" y="78" fill="#C8D0DA" xml:space="preserve">NVD API key: none; requests are paced at 5 per 30 s. Get one at https://nvd.nist.gov/developers/request-an-api-key</text>
+</g></g>
+</svg>

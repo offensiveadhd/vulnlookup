@@ -1,0 +1,6 @@
+$ vulnlookup product "apache httpd 2.4.49" --kev --poc --style terse
+CVE             CVSS      EPSS   KEV             Exploit  Match
+--------------  --------  -----  --------------  -------  -----
+CVE-2021-41773  9.8 CRIT  0.999  KEV+ransomware  ITW      EXACT
+CVE-2021-42013  9.8 CRIT  0.999  KEV+ransomware  ITW      EXACT
+CVE-2024-38475  9.1 CRIT  0.999  KEV             ITW      RANGE

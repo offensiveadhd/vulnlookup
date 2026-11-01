@@ -1,0 +1,2254 @@
+{
+ "_comment": "Product aliases: what people type -> the part:vendor:product pairs the NVD files it under. Several pairs when the NVD renamed a product (nginx was filed under three vendors). Qualifier ranks order version words (negative = pre-release). Derived from SCAN 0.0's catalog (offensiveadhd-scan0); every pair was checked against the NVD CPE dictionary there.",
+ "qualifiers": {
+  "dev": -60,
+  "nightly": -55,
+  "snapshot": -50,
+  "canary": -50,
+  "pre": -45,
+  "prerelease": -45,
+  "preview": -45,
+  "alpha": -40,
+  "a": -40,
+  "beta": -30,
+  "b": -30,
+  "milestone": -20,
+  "m": -20,
+  "rc": -10,
+  "cr": -10,
+  "release": 0,
+  "final": 0,
+  "ga": 0,
+  "stable": 0,
+  "esr": 0,
+  "lts": 0,
+  "ltsc": 0,
+  "x": 0,
+  "build": 5,
+  "p": 10,
+  "pl": 10,
+  "patch": 10,
+  "r": 10,
+  "rev": 10,
+  "revision": 10,
+  "hotfix": 10,
+  "fix": 10,
+  "sp": 20,
+  "servicepack": 20,
+  "service_pack": 20,
+  "u": 30,
+  "update": 30,
+  "upd": 30,
+  "cu": 30
+ },
+ "aliases": [
+  {
+   "q": [
+    "apache",
+    "httpd",
+    "apache httpd",
+    "apache http server",
+    "apache2",
+    "apache http",
+    "apache web server"
+   ],
+   "cpe": [
+    "a:apache:http_server"
+   ]
+  },
+  {
+   "q": [
+    "nginx",
+    "nginx open source",
+    "nginx oss"
+   ],
+   "cpe": [
+    "a:f5:nginx",
+    "a:nginx:nginx",
+    "a:igor_sysoev:nginx"
+   ]
+  },
+  {
+   "q": [
+    "nginx plus"
+   ],
+   "cpe": [
+    "a:f5:nginx_plus"
+   ]
+  },
+  {
+   "q": [
+    "openresty"
+   ],
+   "cpe": [
+    "a:openresty:openresty"
+   ]
+  },
+  {
+   "q": [
+    "iis",
+    "microsoft iis",
+    "microsoft-iis",
+    "internet information services"
+   ],
+   "cpe": [
+    "a:microsoft:internet_information_services"
+   ]
+  },
+  {
+   "q": [
+    "lighttpd"
+   ],
+   "cpe": [
+    "a:lighttpd:lighttpd"
+   ]
+  },
+  {
+   "q": [
+    "caddy",
+    "caddy server"
+   ],
+   "cpe": [
+    "a:caddyserver:caddy"
+   ]
+  },
+  {
+   "q": [
+    "haproxy"
+   ],
+   "cpe": [
+    "a:haproxy:haproxy"
+   ]
+  },
+  {
+   "q": [
+    "traefik"
+   ],
+   "cpe": [
+    "a:traefik:traefik"
+   ]
+  },
+  {
+   "q": [
+    "envoy",
+    "envoy proxy"
+   ],
+   "cpe": [
+    "a:envoyproxy:envoy"
+   ]
+  },
+  {
+   "q": [
+    "squid",
+    "squid proxy",
+    "squid cache"
+   ],
+   "cpe": [
+    "a:squid-cache:squid"
+   ]
+  },
+  {
+   "q": [
+    "varnish",
+    "varnish cache"
+   ],
+   "cpe": [
+    "a:varnish-cache:varnish",
+    "a:varnish_cache_project:varnish_cache"
+   ]
+  },
+  {
+   "q": [
+    "tomcat",
+    "apache tomcat"
+   ],
+   "cpe": [
+    "a:apache:tomcat"
+   ]
+  },
+  {
+   "q": [
+    "jetty",
+    "eclipse jetty"
+   ],
+   "cpe": [
+    "a:eclipse:jetty"
+   ]
+  },
+  {
+   "q": [
+    "gunicorn"
+   ],
+   "cpe": [
+    "a:gunicorn:gunicorn"
+   ]
+  },
+  {
+   "q": [
+    "werkzeug"
+   ],
+   "cpe": [
+    "a:palletsprojects:werkzeug"
+   ]
+  },
+  {
+   "q": [
+    "litespeed",
+    "openlitespeed"
+   ],
+   "cpe": [
+    "a:litespeedtech:openlitespeed",
+    "a:litespeedtech:litespeed_web_server"
+   ]
+  },
+  {
+   "q": [
+    "thttpd"
+   ],
+   "cpe": [
+    "a:acme:thttpd"
+   ]
+  },
+  {
+   "q": [
+    "boa",
+    "boa webserver"
+   ],
+   "cpe": [
+    "a:boa:boa"
+   ]
+  },
+  {
+   "q": [
+    "mini httpd",
+    "mini_httpd"
+   ],
+   "cpe": [
+    "a:acme:mini_httpd"
+   ]
+  },
+  {
+   "q": [
+    "goahead",
+    "goahead webserver"
+   ],
+   "cpe": [
+    "a:embedthis:goahead"
+   ]
+  },
+  {
+   "q": [
+    "php"
+   ],
+   "cpe": [
+    "a:php:php"
+   ]
+  },
+  {
+   "q": [
+    "python",
+    "cpython"
+   ],
+   "cpe": [
+    "a:python:python"
+   ]
+  },
+  {
+   "q": [
+    "node",
+    "nodejs",
+    "node js",
+    "node.js"
+   ],
+   "cpe": [
+    "a:nodejs:node.js"
+   ]
+  },
+  {
+   "q": [
+    "ruby"
+   ],
+   "cpe": [
+    "a:ruby-lang:ruby"
+   ]
+  },
+  {
+   "q": [
+    "perl"
+   ],
+   "cpe": [
+    "a:perl:perl"
+   ]
+  },
+  {
+   "q": [
+    "go",
+    "golang"
+   ],
+   "cpe": [
+    "a:golang:go"
+   ]
+  },
+  {
+   "q": [
+    "rust"
+   ],
+   "cpe": [
+    "a:rust-lang:rust"
+   ]
+  },
+  {
+   "q": [
+    "java",
+    "jdk",
+    "oracle jdk"
+   ],
+   "cpe": [
+    "a:oracle:jdk"
+   ]
+  },
+  {
+   "q": [
+    "jre",
+    "oracle jre"
+   ],
+   "cpe": [
+    "a:oracle:jre"
+   ]
+  },
+  {
+   "q": [
+    "openjdk"
+   ],
+   "cpe": [
+    "a:oracle:openjdk"
+   ]
+  },
+  {
+   "q": [
+    "dotnet",
+    "net core",
+    "dotnet core",
+    ".net"
+   ],
+   "cpe": [
+    "a:microsoft:.net",
+    "a:microsoft:.net_core"
+   ]
+  },
+  {
+   "q": [
+    "net framework",
+    ".net framework",
+    "dotnet framework"
+   ],
+   "cpe": [
+    "a:microsoft:.net_framework"
+   ]
+  },
+  {
+   "q": [
+    "lua"
+   ],
+   "cpe": [
+    "a:lua:lua"
+   ]
+  },
+  {
+   "q": [
+    "erlang",
+    "erlang otp"
+   ],
+   "cpe": [
+    "a:erlang:erlang\\/otp"
+   ]
+  },
+  {
+   "q": [
+    "django"
+   ],
+   "cpe": [
+    "a:djangoproject:django"
+   ]
+  },
+  {
+   "q": [
+    "flask"
+   ],
+   "cpe": [
+    "a:palletsprojects:flask"
+   ]
+  },
+  {
+   "q": [
+    "jinja",
+    "jinja2"
+   ],
+   "cpe": [
+    "a:palletsprojects:jinja"
+   ]
+  },
+  {
+   "q": [
+    "rails",
+    "ruby on rails"
+   ],
+   "cpe": [
+    "a:rubyonrails:rails",
+    "a:rubyonrails:ruby_on_rails"
+   ]
+  },
+  {
+   "q": [
+    "spring",
+    "spring framework"
+   ],
+   "cpe": [
+    "a:vmware:spring_framework",
+    "a:pivotal_software:spring_framework"
+   ]
+  },
+  {
+   "q": [
+    "spring boot"
+   ],
+   "cpe": [
+    "a:vmware:spring_boot",
+    "a:pivotal_software:spring_boot"
+   ]
+  },
+  {
+   "q": [
+    "spring security"
+   ],
+   "cpe": [
+    "a:vmware:spring_security",
+    "a:pivotal_software:spring_security"
+   ]
+  },
+  {
+   "q": [
+    "spring cloud gateway"
+   ],
+   "cpe": [
+    "a:vmware:spring_cloud_gateway"
+   ]
+  },
+  {
+   "q": [
+    "struts",
+    "apache struts",
+    "struts2"
+   ],
+   "cpe": [
+    "a:apache:struts"
+   ]
+  },
+  {
+   "q": [
+    "laravel"
+   ],
+   "cpe": [
+    "a:laravel:laravel",
+    "a:laravel:framework"
+   ]
+  },
+  {
+   "q": [
+    "symfony"
+   ],
+   "cpe": [
+    "a:sensiolabs:symfony"
+   ]
+  },
+  {
+   "q": [
+    "express",
+    "expressjs",
+    "express js"
+   ],
+   "cpe": [
+    "a:openjsf:express",
+    "a:expressjs:express"
+   ]
+  },
+  {
+   "q": [
+    "jquery"
+   ],
+   "cpe": [
+    "a:jquery:jquery"
+   ]
+  },
+  {
+   "q": [
+    "jquery ui"
+   ],
+   "cpe": [
+    "a:jquery:jquery_ui"
+   ]
+  },
+  {
+   "q": [
+    "bootstrap"
+   ],
+   "cpe": [
+    "a:getbootstrap:bootstrap"
+   ]
+  },
+  {
+   "q": [
+    "angular"
+   ],
+   "cpe": [
+    "a:angular:angular"
+   ]
+  },
+  {
+   "q": [
+    "angularjs",
+    "angular js"
+   ],
+   "cpe": [
+    "a:angularjs:angular.js"
+   ]
+  },
+  {
+   "q": [
+    "react",
+    "reactjs"
+   ],
+   "cpe": [
+    "a:facebook:react"
+   ]
+  },
+  {
+   "q": [
+    "lodash"
+   ],
+   "cpe": [
+    "a:lodash:lodash"
+   ]
+  },
+  {
+   "q": [
+    "moment",
+    "momentjs",
+    "moment js"
+   ],
+   "cpe": [
+    "a:momentjs:moment"
+   ]
+  },
+  {
+   "q": [
+    "axios"
+   ],
+   "cpe": [
+    "a:axios:axios"
+   ]
+  },
+  {
+   "q": [
+    "jackson",
+    "jackson databind",
+    "jackson-databind"
+   ],
+   "cpe": [
+    "a:fasterxml:jackson-databind"
+   ]
+  },
+  {
+   "q": [
+    "log4j",
+    "apache log4j",
+    "log4j2"
+   ],
+   "cpe": [
+    "a:apache:log4j"
+   ]
+  },
+  {
+   "q": [
+    "logback"
+   ],
+   "cpe": [
+    "a:qos:logback"
+   ]
+  },
+  {
+   "q": [
+    "shiro",
+    "apache shiro"
+   ],
+   "cpe": [
+    "a:apache:shiro"
+   ]
+  },
+  {
+   "q": [
+    "commons text",
+    "apache commons text"
+   ],
+   "cpe": [
+    "a:apache:commons_text"
+   ]
+  },
+  {
+   "q": [
+    "commons collections",
+    "apache commons collections"
+   ],
+   "cpe": [
+    "a:apache:commons_collections"
+   ]
+  },
+  {
+   "q": [
+    "requests",
+    "python requests"
+   ],
+   "cpe": [
+    "a:python:requests"
+   ]
+  },
+  {
+   "q": [
+    "urllib3"
+   ],
+   "cpe": [
+    "a:python:urllib3"
+   ]
+  },
+  {
+   "q": [
+    "pillow"
+   ],
+   "cpe": [
+    "a:python:pillow"
+   ]
+  },
+  {
+   "q": [
+    "numpy"
+   ],
+   "cpe": [
+    "a:numpy:numpy"
+   ]
+  },
+  {
+   "q": [
+    "pyyaml"
+   ],
+   "cpe": [
+    "a:pyyaml:pyyaml"
+   ]
+  },
+  {
+   "q": [
+    "openssl"
+   ],
+   "cpe": [
+    "a:openssl:openssl"
+   ]
+  },
+  {
+   "q": [
+    "libressl"
+   ],
+   "cpe": [
+    "a:openbsd:libressl"
+   ]
+  },
+  {
+   "q": [
+    "gnutls"
+   ],
+   "cpe": [
+    "a:gnu:gnutls"
+   ]
+  },
+  {
+   "q": [
+    "mbedtls",
+    "mbed tls"
+   ],
+   "cpe": [
+    "a:arm:mbed_tls"
+   ]
+  },
+  {
+   "q": [
+    "wolfssl"
+   ],
+   "cpe": [
+    "a:wolfssl:wolfssl"
+   ]
+  },
+  {
+   "q": [
+    "zlib"
+   ],
+   "cpe": [
+    "a:zlib:zlib"
+   ]
+  },
+  {
+   "q": [
+    "libpng"
+   ],
+   "cpe": [
+    "a:libpng:libpng"
+   ]
+  },
+  {
+   "q": [
+    "libxml2"
+   ],
+   "cpe": [
+    "a:xmlsoft:libxml2"
+   ]
+  },
+  {
+   "q": [
+    "libxslt"
+   ],
+   "cpe": [
+    "a:xmlsoft:libxslt"
+   ]
+  },
+  {
+   "q": [
+    "expat",
+    "libexpat"
+   ],
+   "cpe": [
+    "a:libexpat_project:libexpat"
+   ]
+  },
+  {
+   "q": [
+    "sqlite",
+    "sqlite3"
+   ],
+   "cpe": [
+    "a:sqlite:sqlite"
+   ]
+  },
+  {
+   "q": [
+    "glibc",
+    "gnu libc"
+   ],
+   "cpe": [
+    "a:gnu:glibc"
+   ]
+  },
+  {
+   "q": [
+    "bash",
+    "gnu bash"
+   ],
+   "cpe": [
+    "a:gnu:bash"
+   ]
+  },
+  {
+   "q": [
+    "curl",
+    "libcurl"
+   ],
+   "cpe": [
+    "a:haxx:curl",
+    "a:haxx:libcurl",
+    "a:curl:curl"
+   ]
+  },
+  {
+   "q": [
+    "wget"
+   ],
+   "cpe": [
+    "a:gnu:wget"
+   ]
+  },
+  {
+   "q": [
+    "git"
+   ],
+   "cpe": [
+    "a:git-scm:git"
+   ]
+  },
+  {
+   "q": [
+    "ffmpeg"
+   ],
+   "cpe": [
+    "a:ffmpeg:ffmpeg"
+   ]
+  },
+  {
+   "q": [
+    "imagemagick"
+   ],
+   "cpe": [
+    "a:imagemagick:imagemagick"
+   ]
+  },
+  {
+   "q": [
+    "ghostscript"
+   ],
+   "cpe": [
+    "a:artifex:ghostscript"
+   ]
+  },
+  {
+   "q": [
+    "exiftool"
+   ],
+   "cpe": [
+    "a:exiftool_project:exiftool"
+   ]
+  },
+  {
+   "q": [
+    "busybox"
+   ],
+   "cpe": [
+    "a:busybox:busybox"
+   ]
+  },
+  {
+   "q": [
+    "systemd"
+   ],
+   "cpe": [
+    "a:systemd_project:systemd"
+   ]
+  },
+  {
+   "q": [
+    "polkit"
+   ],
+   "cpe": [
+    "a:polkit_project:polkit"
+   ]
+  },
+  {
+   "q": [
+    "sudo"
+   ],
+   "cpe": [
+    "a:sudo_project:sudo"
+   ]
+  },
+  {
+   "q": [
+    "vim"
+   ],
+   "cpe": [
+    "a:vim:vim"
+   ]
+  },
+  {
+   "q": [
+    "electron"
+   ],
+   "cpe": [
+    "a:electronjs:electron"
+   ]
+  },
+  {
+   "q": [
+    "webkitgtk",
+    "webkit gtk"
+   ],
+   "cpe": [
+    "a:webkitgtk:webkitgtk"
+   ]
+  },
+  {
+   "q": [
+    "mysql"
+   ],
+   "cpe": [
+    "a:oracle:mysql",
+    "a:mysql:mysql"
+   ]
+  },
+  {
+   "q": [
+    "mariadb"
+   ],
+   "cpe": [
+    "a:mariadb:mariadb"
+   ]
+  },
+  {
+   "q": [
+    "postgres",
+    "postgresql"
+   ],
+   "cpe": [
+    "a:postgresql:postgresql"
+   ]
+  },
+  {
+   "q": [
+    "redis"
+   ],
+   "cpe": [
+    "a:redis:redis",
+    "a:redislabs:redis"
+   ]
+  },
+  {
+   "q": [
+    "mongodb",
+    "mongo"
+   ],
+   "cpe": [
+    "a:mongodb:mongodb"
+   ]
+  },
+  {
+   "q": [
+    "memcached"
+   ],
+   "cpe": [
+    "a:memcached:memcached"
+   ]
+  },
+  {
+   "q": [
+    "elasticsearch",
+    "elastic search"
+   ],
+   "cpe": [
+    "a:elastic:elasticsearch"
+   ]
+  },
+  {
+   "q": [
+    "kibana"
+   ],
+   "cpe": [
+    "a:elastic:kibana"
+   ]
+  },
+  {
+   "q": [
+    "logstash"
+   ],
+   "cpe": [
+    "a:elastic:logstash"
+   ]
+  },
+  {
+   "q": [
+    "solr",
+    "apache solr"
+   ],
+   "cpe": [
+    "a:apache:solr"
+   ]
+  },
+  {
+   "q": [
+    "couchdb",
+    "apache couchdb"
+   ],
+   "cpe": [
+    "a:apache:couchdb"
+   ]
+  },
+  {
+   "q": [
+    "cassandra",
+    "apache cassandra"
+   ],
+   "cpe": [
+    "a:apache:cassandra"
+   ]
+  },
+  {
+   "q": [
+    "kafka",
+    "apache kafka"
+   ],
+   "cpe": [
+    "a:apache:kafka"
+   ]
+  },
+  {
+   "q": [
+    "activemq",
+    "apache activemq"
+   ],
+   "cpe": [
+    "a:apache:activemq"
+   ]
+  },
+  {
+   "q": [
+    "rabbitmq"
+   ],
+   "cpe": [
+    "a:vmware:rabbitmq",
+    "a:pivotal_software:rabbitmq"
+   ]
+  },
+  {
+   "q": [
+    "zookeeper",
+    "apache zookeeper"
+   ],
+   "cpe": [
+    "a:apache:zookeeper"
+   ]
+  },
+  {
+   "q": [
+    "hadoop",
+    "apache hadoop"
+   ],
+   "cpe": [
+    "a:apache:hadoop"
+   ]
+  },
+  {
+   "q": [
+    "spark",
+    "apache spark"
+   ],
+   "cpe": [
+    "a:apache:spark"
+   ]
+  },
+  {
+   "q": [
+    "airflow",
+    "apache airflow"
+   ],
+   "cpe": [
+    "a:apache:airflow"
+   ]
+  },
+  {
+   "q": [
+    "superset",
+    "apache superset"
+   ],
+   "cpe": [
+    "a:apache:superset"
+   ]
+  },
+  {
+   "q": [
+    "ofbiz",
+    "apache ofbiz"
+   ],
+   "cpe": [
+    "a:apache:ofbiz"
+   ]
+  },
+  {
+   "q": [
+    "minio"
+   ],
+   "cpe": [
+    "a:minio:minio"
+   ]
+  },
+  {
+   "q": [
+    "influxdb"
+   ],
+   "cpe": [
+    "a:influxdata:influxdb"
+   ]
+  },
+  {
+   "q": [
+    "clickhouse"
+   ],
+   "cpe": [
+    "a:clickhouse:clickhouse"
+   ]
+  },
+  {
+   "q": [
+    "sql server",
+    "mssql",
+    "microsoft sql server"
+   ],
+   "cpe": [
+    "a:microsoft:sql_server"
+   ]
+  },
+  {
+   "q": [
+    "oracle database",
+    "oracle db"
+   ],
+   "cpe": [
+    "a:oracle:database_server",
+    "a:oracle:database"
+   ]
+  },
+  {
+   "q": [
+    "jenkins"
+   ],
+   "cpe": [
+    "a:jenkins:jenkins"
+   ]
+  },
+  {
+   "q": [
+    "gitlab"
+   ],
+   "cpe": [
+    "a:gitlab:gitlab"
+   ]
+  },
+  {
+   "q": [
+    "gitea"
+   ],
+   "cpe": [
+    "a:gitea:gitea"
+   ]
+  },
+  {
+   "q": [
+    "gogs"
+   ],
+   "cpe": [
+    "a:gogs:gogs"
+   ]
+  },
+  {
+   "q": [
+    "grafana"
+   ],
+   "cpe": [
+    "a:grafana:grafana"
+   ]
+  },
+  {
+   "q": [
+    "prometheus"
+   ],
+   "cpe": [
+    "a:prometheus:prometheus"
+   ]
+  },
+  {
+   "q": [
+    "zabbix"
+   ],
+   "cpe": [
+    "a:zabbix:zabbix"
+   ]
+  },
+  {
+   "q": [
+    "nagios",
+    "nagios xi"
+   ],
+   "cpe": [
+    "a:nagios:nagios_xi",
+    "a:nagios:nagios"
+   ]
+  },
+  {
+   "q": [
+    "docker",
+    "docker engine"
+   ],
+   "cpe": [
+    "a:docker:docker"
+   ]
+  },
+  {
+   "q": [
+    "kubernetes",
+    "k8s"
+   ],
+   "cpe": [
+    "a:kubernetes:kubernetes"
+   ]
+  },
+  {
+   "q": [
+    "istio"
+   ],
+   "cpe": [
+    "a:istio:istio"
+   ]
+  },
+  {
+   "q": [
+    "harbor"
+   ],
+   "cpe": [
+    "a:linuxfoundation:harbor"
+   ]
+  },
+  {
+   "q": [
+    "argo cd",
+    "argocd"
+   ],
+   "cpe": [
+    "a:argoproj:argo_cd",
+    "a:linuxfoundation:argo-cd"
+   ]
+  },
+  {
+   "q": [
+    "vault",
+    "hashicorp vault"
+   ],
+   "cpe": [
+    "a:hashicorp:vault"
+   ]
+  },
+  {
+   "q": [
+    "consul",
+    "hashicorp consul"
+   ],
+   "cpe": [
+    "a:hashicorp:consul"
+   ]
+  },
+  {
+   "q": [
+    "terraform"
+   ],
+   "cpe": [
+    "a:hashicorp:terraform"
+   ]
+  },
+  {
+   "q": [
+    "ansible"
+   ],
+   "cpe": [
+    "a:redhat:ansible"
+   ]
+  },
+  {
+   "q": [
+    "puppet"
+   ],
+   "cpe": [
+    "a:puppet:puppet"
+   ]
+  },
+  {
+   "q": [
+    "salt",
+    "saltstack"
+   ],
+   "cpe": [
+    "a:saltstack:salt"
+   ]
+  },
+  {
+   "q": [
+    "teamcity"
+   ],
+   "cpe": [
+    "a:jetbrains:teamcity"
+   ]
+  },
+  {
+   "q": [
+    "sonarqube"
+   ],
+   "cpe": [
+    "a:sonarsource:sonarqube"
+   ]
+  },
+  {
+   "q": [
+    "nexus",
+    "nexus repository",
+    "sonatype nexus"
+   ],
+   "cpe": [
+    "a:sonatype:nexus_repository_manager",
+    "a:sonatype:nexus"
+   ]
+  },
+  {
+   "q": [
+    "artifactory"
+   ],
+   "cpe": [
+    "a:jfrog:artifactory"
+   ]
+  },
+  {
+   "q": [
+    "keycloak"
+   ],
+   "cpe": [
+    "a:redhat:keycloak"
+   ]
+  },
+  {
+   "q": [
+    "openldap"
+   ],
+   "cpe": [
+    "a:openldap:openldap"
+   ]
+  },
+  {
+   "q": [
+    "freeradius"
+   ],
+   "cpe": [
+    "a:freeradius:freeradius"
+   ]
+  },
+  {
+   "q": [
+    "webmin"
+   ],
+   "cpe": [
+    "a:webmin:webmin"
+   ]
+  },
+  {
+   "q": [
+    "qemu"
+   ],
+   "cpe": [
+    "a:qemu:qemu"
+   ]
+  },
+  {
+   "q": [
+    "libvirt"
+   ],
+   "cpe": [
+    "a:redhat:libvirt"
+   ]
+  },
+  {
+   "q": [
+    "virtualbox"
+   ],
+   "cpe": [
+    "a:oracle:vm_virtualbox"
+   ]
+  },
+  {
+   "q": [
+    "xen"
+   ],
+   "cpe": [
+    "o:xen:xen"
+   ]
+  },
+  {
+   "q": [
+    "esxi",
+    "vmware esxi"
+   ],
+   "cpe": [
+    "o:vmware:esxi"
+   ]
+  },
+  {
+   "q": [
+    "vcenter",
+    "vmware vcenter"
+   ],
+   "cpe": [
+    "a:vmware:vcenter_server"
+   ]
+  },
+  {
+   "q": [
+    "proxmox",
+    "proxmox ve"
+   ],
+   "cpe": [
+    "a:proxmox:virtual_environment"
+   ]
+  },
+  {
+   "q": [
+    "weblogic",
+    "oracle weblogic"
+   ],
+   "cpe": [
+    "a:oracle:weblogic_server"
+   ]
+  },
+  {
+   "q": [
+    "websphere"
+   ],
+   "cpe": [
+    "a:ibm:websphere_application_server"
+   ]
+  },
+  {
+   "q": [
+    "jboss",
+    "jboss eap"
+   ],
+   "cpe": [
+    "a:redhat:jboss_enterprise_application_platform"
+   ]
+  },
+  {
+   "q": [
+    "wildfly"
+   ],
+   "cpe": [
+    "a:redhat:wildfly"
+   ]
+  },
+  {
+   "q": [
+    "glassfish"
+   ],
+   "cpe": [
+    "a:oracle:glassfish_server"
+   ]
+  },
+  {
+   "q": [
+    "openssh",
+    "ssh"
+   ],
+   "cpe": [
+    "a:openbsd:openssh"
+   ]
+  },
+  {
+   "q": [
+    "dropbear"
+   ],
+   "cpe": [
+    "a:dropbear_ssh_project:dropbear_ssh"
+   ]
+  },
+  {
+   "q": [
+    "exim"
+   ],
+   "cpe": [
+    "a:exim:exim"
+   ]
+  },
+  {
+   "q": [
+    "postfix"
+   ],
+   "cpe": [
+    "a:postfix:postfix"
+   ]
+  },
+  {
+   "q": [
+    "sendmail"
+   ],
+   "cpe": [
+    "a:sendmail:sendmail"
+   ]
+  },
+  {
+   "q": [
+    "dovecot"
+   ],
+   "cpe": [
+    "a:dovecot:dovecot"
+   ]
+  },
+  {
+   "q": [
+    "bind",
+    "isc bind",
+    "bind9"
+   ],
+   "cpe": [
+    "a:isc:bind"
+   ]
+  },
+  {
+   "q": [
+    "dnsmasq"
+   ],
+   "cpe": [
+    "a:thekelleys:dnsmasq"
+   ]
+  },
+  {
+   "q": [
+    "samba"
+   ],
+   "cpe": [
+    "a:samba:samba"
+   ]
+  },
+  {
+   "q": [
+    "proftpd"
+   ],
+   "cpe": [
+    "a:proftpd:proftpd"
+   ]
+  },
+  {
+   "q": [
+    "vsftpd"
+   ],
+   "cpe": [
+    "a:vsftpd_project:vsftpd"
+   ]
+  },
+  {
+   "q": [
+    "openvpn"
+   ],
+   "cpe": [
+    "a:openvpn:openvpn"
+   ]
+  },
+  {
+   "q": [
+    "strongswan"
+   ],
+   "cpe": [
+    "a:strongswan:strongswan"
+   ]
+  },
+  {
+   "q": [
+    "wireguard"
+   ],
+   "cpe": [
+    "a:wireguard:wireguard"
+   ]
+  },
+  {
+   "q": [
+    "wireshark"
+   ],
+   "cpe": [
+    "a:wireshark:wireshark"
+   ]
+  },
+  {
+   "q": [
+    "cups"
+   ],
+   "cpe": [
+    "a:openprinting:cups",
+    "a:apple:cups"
+   ]
+  },
+  {
+   "q": [
+    "avahi"
+   ],
+   "cpe": [
+    "a:avahi:avahi"
+   ]
+  },
+  {
+   "q": [
+    "ntp",
+    "ntpd"
+   ],
+   "cpe": [
+    "a:ntp:ntp"
+   ]
+  },
+  {
+   "q": [
+    "chrony"
+   ],
+   "cpe": [
+    "a:tuxfamily:chrony"
+   ]
+  },
+  {
+   "q": [
+    "telnetd"
+   ],
+   "cpe": [
+    "a:gnu:inetutils"
+   ]
+  },
+  {
+   "q": [
+    "wordpress"
+   ],
+   "cpe": [
+    "a:wordpress:wordpress"
+   ]
+  },
+  {
+   "q": [
+    "drupal"
+   ],
+   "cpe": [
+    "a:drupal:drupal"
+   ]
+  },
+  {
+   "q": [
+    "joomla"
+   ],
+   "cpe": [
+    "a:joomla:joomla\\!"
+   ]
+  },
+  {
+   "q": [
+    "magento"
+   ],
+   "cpe": [
+    "a:magento:magento",
+    "a:adobe:magento"
+   ]
+  },
+  {
+   "q": [
+    "typo3"
+   ],
+   "cpe": [
+    "a:typo3:typo3"
+   ]
+  },
+  {
+   "q": [
+    "moodle"
+   ],
+   "cpe": [
+    "a:moodle:moodle"
+   ]
+  },
+  {
+   "q": [
+    "mediawiki"
+   ],
+   "cpe": [
+    "a:mediawiki:mediawiki"
+   ]
+  },
+  {
+   "q": [
+    "phpmyadmin"
+   ],
+   "cpe": [
+    "a:phpmyadmin:phpmyadmin"
+   ]
+  },
+  {
+   "q": [
+    "roundcube"
+   ],
+   "cpe": [
+    "a:roundcube:webmail"
+   ]
+  },
+  {
+   "q": [
+    "nextcloud"
+   ],
+   "cpe": [
+    "a:nextcloud:nextcloud_server",
+    "a:nextcloud:nextcloud"
+   ]
+  },
+  {
+   "q": [
+    "owncloud"
+   ],
+   "cpe": [
+    "a:owncloud:owncloud"
+   ]
+  },
+  {
+   "q": [
+    "confluence"
+   ],
+   "cpe": [
+    "a:atlassian:confluence_server",
+    "a:atlassian:confluence_data_center",
+    "a:atlassian:confluence"
+   ]
+  },
+  {
+   "q": [
+    "jira"
+   ],
+   "cpe": [
+    "a:atlassian:jira",
+    "a:atlassian:jira_server",
+    "a:atlassian:jira_data_center"
+   ]
+  },
+  {
+   "q": [
+    "bitbucket"
+   ],
+   "cpe": [
+    "a:atlassian:bitbucket"
+   ]
+  },
+  {
+   "q": [
+    "mattermost"
+   ],
+   "cpe": [
+    "a:mattermost:mattermost_server",
+    "a:mattermost:mattermost"
+   ]
+  },
+  {
+   "q": [
+    "rocket chat",
+    "rocketchat"
+   ],
+   "cpe": [
+    "a:rocket.chat:rocket.chat"
+   ]
+  },
+  {
+   "q": [
+    "zimbra"
+   ],
+   "cpe": [
+    "a:zimbra:collaboration",
+    "a:synacor:zimbra_collaboration_suite"
+   ]
+  },
+  {
+   "q": [
+    "exchange",
+    "exchange server",
+    "microsoft exchange"
+   ],
+   "cpe": [
+    "a:microsoft:exchange_server"
+   ]
+  },
+  {
+   "q": [
+    "sharepoint"
+   ],
+   "cpe": [
+    "a:microsoft:sharepoint_server"
+   ]
+  },
+  {
+   "q": [
+    "office",
+    "microsoft office"
+   ],
+   "cpe": [
+    "a:microsoft:office"
+   ]
+  },
+  {
+   "q": [
+    "outlook"
+   ],
+   "cpe": [
+    "a:microsoft:outlook"
+   ]
+  },
+  {
+   "q": [
+    "teams",
+    "microsoft teams"
+   ],
+   "cpe": [
+    "a:microsoft:teams"
+   ]
+  },
+  {
+   "q": [
+    "vbulletin"
+   ],
+   "cpe": [
+    "a:vbulletin:vbulletin"
+   ]
+  },
+  {
+   "q": [
+    "minecraft"
+   ],
+   "cpe": [
+    "a:minecraft:minecraft",
+    "a:minecraft:bedrock_server"
+   ]
+  },
+  {
+   "q": [
+    "kicad"
+   ],
+   "cpe": [
+    "a:kicad:eda",
+    "a:kicad:kicad_eda"
+   ]
+  },
+  {
+   "q": [
+    "7zip",
+    "7 zip",
+    "7-zip"
+   ],
+   "cpe": [
+    "a:7-zip:7-zip"
+   ]
+  },
+  {
+   "q": [
+    "winrar"
+   ],
+   "cpe": [
+    "a:rarlab:winrar"
+   ]
+  },
+  {
+   "q": [
+    "notepad++",
+    "notepad plus plus",
+    "notepadplusplus"
+   ],
+   "cpe": [
+    "a:notepad-plus-plus:notepad\\+\\+"
+   ]
+  },
+  {
+   "q": [
+    "putty"
+   ],
+   "cpe": [
+    "a:putty:putty"
+   ]
+  },
+  {
+   "q": [
+    "filezilla"
+   ],
+   "cpe": [
+    "a:filezilla-project:filezilla_client"
+   ]
+  },
+  {
+   "q": [
+    "acrobat reader",
+    "adobe reader"
+   ],
+   "cpe": [
+    "a:adobe:acrobat_reader",
+    "a:adobe:acrobat_reader_dc"
+   ]
+  },
+  {
+   "q": [
+    "zoom"
+   ],
+   "cpe": [
+    "a:zoom:zoom",
+    "a:zoom:meetings"
+   ]
+  },
+  {
+   "q": [
+    "chrome",
+    "google chrome"
+   ],
+   "cpe": [
+    "a:google:chrome"
+   ]
+  },
+  {
+   "q": [
+    "firefox",
+    "mozilla firefox"
+   ],
+   "cpe": [
+    "a:mozilla:firefox"
+   ]
+  },
+  {
+   "q": [
+    "firefox esr"
+   ],
+   "cpe": [
+    "a:mozilla:firefox_esr"
+   ]
+  },
+  {
+   "q": [
+    "edge",
+    "microsoft edge"
+   ],
+   "cpe": [
+    "a:microsoft:edge_chromium",
+    "a:microsoft:edge"
+   ]
+  },
+  {
+   "q": [
+    "safari"
+   ],
+   "cpe": [
+    "a:apple:safari"
+   ]
+  },
+  {
+   "q": [
+    "linux",
+    "linux kernel",
+    "kernel"
+   ],
+   "cpe": [
+    "o:linux:linux_kernel"
+   ]
+  },
+  {
+   "q": [
+    "windows 10",
+    "win10",
+    "windows10"
+   ],
+   "cpe": [
+    "o:microsoft:windows_10"
+   ],
+   "family": "o:microsoft:windows_10_{v}"
+  },
+  {
+   "q": [
+    "windows 11",
+    "win11",
+    "windows11"
+   ],
+   "cpe": [
+    "o:microsoft:windows_11"
+   ],
+   "family": "o:microsoft:windows_11_{v}"
+  },
+  {
+   "q": [
+    "windows 7",
+    "win7"
+   ],
+   "cpe": [
+    "o:microsoft:windows_7"
+   ]
+  },
+  {
+   "q": [
+    "windows 8.1",
+    "windows 8 1"
+   ],
+   "cpe": [
+    "o:microsoft:windows_8.1"
+   ]
+  },
+  {
+   "q": [
+    "windows xp",
+    "winxp"
+   ],
+   "cpe": [
+    "o:microsoft:windows_xp"
+   ]
+  },
+  {
+   "q": [
+    "windows server 2012"
+   ],
+   "cpe": [
+    "o:microsoft:windows_server_2012"
+   ]
+  },
+  {
+   "q": [
+    "windows server 2016"
+   ],
+   "cpe": [
+    "o:microsoft:windows_server_2016"
+   ]
+  },
+  {
+   "q": [
+    "windows server 2019"
+   ],
+   "cpe": [
+    "o:microsoft:windows_server_2019"
+   ]
+  },
+  {
+   "q": [
+    "windows server 2022"
+   ],
+   "cpe": [
+    "o:microsoft:windows_server_2022"
+   ]
+  },
+  {
+   "q": [
+    "windows server 2025"
+   ],
+   "cpe": [
+    "o:microsoft:windows_server_2025"
+   ]
+  },
+  {
+   "q": [
+    "ubuntu",
+    "ubuntu linux"
+   ],
+   "cpe": [
+    "o:canonical:ubuntu_linux"
+   ]
+  },
+  {
+   "q": [
+    "debian",
+    "debian linux"
+   ],
+   "cpe": [
+    "o:debian:debian_linux"
+   ]
+  },
+  {
+   "q": [
+    "rhel",
+    "red hat enterprise linux",
+    "redhat enterprise linux"
+   ],
+   "cpe": [
+    "o:redhat:enterprise_linux"
+   ]
+  },
+  {
+   "q": [
+    "centos"
+   ],
+   "cpe": [
+    "o:centos:centos"
+   ]
+  },
+  {
+   "q": [
+    "fedora"
+   ],
+   "cpe": [
+    "o:fedoraproject:fedora"
+   ]
+  },
+  {
+   "q": [
+    "alpine",
+    "alpine linux"
+   ],
+   "cpe": [
+    "o:alpinelinux:alpine_linux"
+   ]
+  },
+  {
+   "q": [
+    "android"
+   ],
+   "cpe": [
+    "o:google:android"
+   ]
+  },
+  {
+   "q": [
+    "ios",
+    "iphone os",
+    "apple ios"
+   ],
+   "cpe": [
+    "o:apple:iphone_os"
+   ]
+  },
+  {
+   "q": [
+    "macos",
+    "mac os x",
+    "osx"
+   ],
+   "cpe": [
+    "o:apple:macos",
+    "o:apple:mac_os_x"
+   ]
+  },
+  {
+   "q": [
+    "freebsd"
+   ],
+   "cpe": [
+    "o:freebsd:freebsd"
+   ]
+  },
+  {
+   "q": [
+    "openbsd"
+   ],
+   "cpe": [
+    "o:openbsd:openbsd"
+   ]
+  },
+  {
+   "q": [
+    "openwrt"
+   ],
+   "cpe": [
+    "o:openwrt:openwrt"
+   ]
+  },
+  {
+   "q": [
+    "pfsense"
+   ],
+   "cpe": [
+    "a:netgate:pfsense",
+    "a:pfsense:pfsense"
+   ]
+  },
+  {
+   "q": [
+    "fortios",
+    "fortigate"
+   ],
+   "cpe": [
+    "o:fortinet:fortios"
+   ]
+  },
+  {
+   "q": [
+    "pan-os",
+    "panos",
+    "palo alto"
+   ],
+   "cpe": [
+    "o:paloaltonetworks:pan-os"
+   ]
+  },
+  {
+   "q": [
+    "cisco ios"
+   ],
+   "cpe": [
+    "o:cisco:ios"
+   ]
+  },
+  {
+   "q": [
+    "cisco ios xe",
+    "ios xe"
+   ],
+   "cpe": [
+    "o:cisco:ios_xe"
+   ]
+  },
+  {
+   "q": [
+    "cisco asa",
+    "asa"
+   ],
+   "cpe": [
+    "o:cisco:adaptive_security_appliance_software"
+   ]
+  },
+  {
+   "q": [
+    "junos",
+    "juniper junos"
+   ],
+   "cpe": [
+    "o:juniper:junos"
+   ]
+  },
+  {
+   "q": [
+    "citrix adc",
+    "netscaler",
+    "netscaler adc"
+   ],
+   "cpe": [
+    "a:citrix:application_delivery_controller",
+    "a:citrix:netscaler_application_delivery_controller"
+   ]
+  },
+  {
+   "q": [
+    "netscaler gateway",
+    "citrix gateway"
+   ],
+   "cpe": [
+    "a:citrix:gateway",
+    "a:citrix:netscaler_gateway"
+   ]
+  },
+  {
+   "q": [
+    "ivanti connect secure",
+    "pulse secure",
+    "pulse connect secure"
+   ],
+   "cpe": [
+    "a:ivanti:connect_secure",
+    "a:pulsesecure:pulse_connect_secure"
+   ]
+  },
+  {
+   "q": [
+    "u-boot",
+    "uboot",
+    "das u-boot"
+   ],
+   "cpe": [
+    "a:denx:u-boot"
+   ]
+  },
+  {
+   "q": [
+    "freertos"
+   ],
+   "cpe": [
+    "o:amazon:freertos"
+   ]
+  },
+  {
+   "q": [
+    "zephyr"
+   ],
+   "cpe": [
+    "o:zephyrproject:zephyr"
+   ]
+  },
+  {
+   "q": [
+    "esp-idf",
+    "esp idf",
+    "espidf"
+   ],
+   "cpe": [
+    "a:espressif:esp-idf"
+   ]
+  }
+ ]
+}

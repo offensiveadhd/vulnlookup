@@ -1,0 +1,3 @@
+$ vulnlookup resolve "log4j 2.14.1"
+cpe:2.3:a:apache:log4j:2.14.1:*:*:*:*:*:*:*
+  exact dictionary entry (cpe:2.3:a:apache:log4j:2.14.1:-:*:*:*:*:*:*)

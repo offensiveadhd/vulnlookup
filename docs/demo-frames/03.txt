@@ -1,0 +1,9 @@
+$ vulnlookup product "apache httpd 2.4.49" --kev --style executive --format brief
+Subject: apache httpd 2.4.49 -> a:apache:http_server (via alias); version in the NVD dictionary
+3 CVE(s) confirmed against the subject: 3 critical, 0 high; 3 in CISA KEV; 3 with EPSS >= 0.1.
+Act first:
+  - CVE-2021-41773 (9.8 CRIT, EPSS 0.999, KEV)
+  - CVE-2021-42013 (9.8 CRIT, EPSS 0.999, KEV)
+  - CVE-2024-38475 (9.1 CRIT, EPSS 0.999, KEV): upgrade to 2.4.60
+
+Not counted (shown with --include-unverified): COND 3

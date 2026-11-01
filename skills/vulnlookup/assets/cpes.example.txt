@@ -1,0 +1,4 @@
+# one CPE 2.3 name per line; use with: vulnlookup bulk --cpes this-file
+cpe:2.3:a:apache:http_server:2.4.49:*:*:*:*:*:*:*
+cpe:2.3:a:openssl:openssl:1.1.1:*:*:*:*:*:*:*
+cpe:2.3:a:apache:log4j:2.14.1:*:*:*:*:*:*:*

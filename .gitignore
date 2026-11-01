@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+# never a key, never a cache, in any spelling
+nvd_api_key
+*.key
+.vulnlookup/
+cache/
+*.cache
+# local scratch
+.tmp-*
+*.tmp
+scratch/
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

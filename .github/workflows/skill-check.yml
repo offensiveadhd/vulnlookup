@@ -1,0 +1,17 @@
+name: skill format
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  skill:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: SKILL.md frontmatter, file map, manifests, examples
+        run: python tests/check_skill.py

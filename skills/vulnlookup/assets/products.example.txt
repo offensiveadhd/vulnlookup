@@ -1,0 +1,8 @@
+# one subject per line: a product in the spelling you would type it, optionally a version
+# lines starting with # are ignored; use with: vulnlookup bulk --products this-file
+apache httpd 2.4.49
+nginx 1.18.0
+openssl 1.1.1k
+log4j 2.14.1
+php 7.4.0
+jenkins 2.303.1
