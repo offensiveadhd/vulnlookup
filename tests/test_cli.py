@@ -411,3 +411,15 @@ def test_cache_commands(fetch):
     assert "removed 1" in text
     code, text = run(fetch, "cache", "path")
     assert text.strip()
+
+
+def test_subject_line_names_the_vendors_the_dictionary_knows():
+    from vl import resolve as R
+
+    res = R.Resolution("ok", R.parse_product("nginx 1.18.0"), ["a:f5:nginx", "a:nginx:nginx", "a:igor_sysoev:nginx"], "alias")
+    snaps = [R.Snap(True, "1.18.0", "*"), R.Snap(False, "1.18.0", "*"), R.Snap(False, "1.18.0", "*")]
+    line = cli.subject_line(res, snaps)
+    assert "version in the NVD dictionary for a:f5:nginx (typed as given for the rest)" in line
+    assert "NOT" not in line
+    assert "version in the NVD dictionary" in cli.subject_line(res, [R.Snap(True, "1.18.0", "*")] * 3)
+    assert "NOT in the NVD dictionary" in cli.subject_line(res, [R.Snap(False, "1.18.0", "*")] * 3)

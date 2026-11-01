@@ -365,8 +365,11 @@ def subject_line(res: resolve.Resolution, snaps: list[resolve.Snap]) -> str:
     s = q.text + (f" {q.version}" if q.has_version else "") + (f" {q.update}" if q.update != C.ANY else "")
     s += " -> " + ", ".join(res.pairs + res.family) + f" (via {res.via})"
     if snaps:
-        if all(x.in_dictionary for x in snaps):
+        found = [pair for pair, x in zip(res.pairs, snaps) if x.in_dictionary]
+        if found and len(found) == len(snaps):
             s += "; version in the NVD dictionary"
+        elif found:  # a product filed under several vendors: the dictionary knows the version for some of them
+            s += "; version in the NVD dictionary for " + ", ".join(found) + " (typed as given for the rest)"
         else:
             s += "; version NOT in the NVD dictionary (typed as given; only range criteria can match it)"
     return s
